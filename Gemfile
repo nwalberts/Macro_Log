@@ -12,6 +12,8 @@ gem 'jquery-rails'
 gem 'listen'
 gem 'haml-rails'
 gem 'devise'
+gem 'puma', '~> 3.0'
+gem 'faker'
 
 group :development, :test do
   gem 'capybara'
@@ -20,12 +22,13 @@ group :development, :test do
   gem 'pry-rails'
   gem 'shoulda'
   gem 'valid_attribute'
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
 group :test do
   gem 'launchy'
   gem 'database_cleaner'
-  gem 'faker'
 end
 
 group :production do

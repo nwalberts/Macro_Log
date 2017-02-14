@@ -1,2 +1,26 @@
 // @import "*";
 
+.page-title, .log-name {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.logs {
+  text-align: center;
+}
+
+.log {
+  margin-bottom: 20px;
+}
+
+.review {
+  border: 8px solid black;
+  margin: 2px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.log-info {
+  font-size: 30px;
+}
