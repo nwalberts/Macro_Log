@@ -3,6 +3,15 @@ Rails.application.routes.draw do
 
   resources :users, only: [:index, :destroy]
 
+  resources :logs, only: [:index, :show]
+
+  namespace :api do
+    namespace :v1 do
+      resources :logs, only: [:index, :show]
+      resources :reviews, only: [:edit, :update]
+    end
+  end
+
   devise_for :users
 
   devise_scope :user do
